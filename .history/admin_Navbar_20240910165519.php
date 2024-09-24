@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta name="description" content="Ecofood theme template">
+    <meta name="author" content="AuCreative">
+    <meta name="keywords" content="Ecofood theme template">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/css-hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+    <link href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="vendor/revolution/css/layers.css" rel="stylesheet">
+    <link href="vendor/revolution/css/navigation.css" rel="stylesheet">
+    <link href="vendor/revolution/css/settings.css" rel="stylesheet">
+    <link href="vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/switcher.css" rel="stylesheet">
+    <link href="css/colors/green.css" rel="stylesheet" id="colors">
+    <link href="css/retina.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.html">
+    <script src="js/modernizr-custom.js"></script>
+
+    <style>
+        /* Default Navbar Style */
+        #js-navbar {
+            padding: 20px 0;
+            background-color: #fff;
+            transition: all 0.3s ease; /* Smooth transition for padding and background */
+        }
+
+        /* Navbar after scrolling */
+        .navbar-scrolled {
+            padding: 5px 0; /* Reduce padding to shrink navbar */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow to navbar when scrolled */
+        }
+
+        /* Optional: adjust logo size on scroll */
+        .navbar-scrolled .logo img {
+            height: 40px; /* Make the logo smaller when scrolled */
+            transition: height 0.3s ease;
+        }
+
+        /* Optional: adjust nav links size */
+        .navbar-scrolled .nav-menu a {
+            font-size: 14px; /* Make the links smaller when scrolled */
+            transition: font-size 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="section dark-background">
+            <div class="container">
+                <div class="header-2">
+                    <div class="header-left">
+                        <p>
+                            <i class="fa fa-map-marker"></i>256 Address Name, New York City
+                            <span>|</span>
+                            <i class="fa fa-clock-o"></i>07:30 AM - 11:00 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="section white-background" id="js-navbar">
+            <div class="container">
+                <div class="nav-1 nav-2">
+                    <button class="hamburger has-animation hamburger--collapse" id="toggle-icon">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <div class="logo">
+                        <a href="admin_index.php">
+                            <img src="images/icons/ic-logo-01.png" alt="Ecofood" />
+                        </a>
+                    </div>
+                    <div class="cart-icon-holder">
+                        <div class="cart-shopping js-mini-shopcart">
+                            <span class="totals">2</span>
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <ul class="nav-menu">
+                        <li>
+                            <a class="has-text-color-hover" href="admin_index.php">HOME</a>
+                        </li>
+                        <li>
+                            <a class="has-text-color-hover" href="admin_register.php">Admin Register</a>
+                        </li>
+                        <li class="has-drop">
+                            <a class="has-text-color-hover" href="oo.php">Order Details</a>
+                            <button class="btn-caret fa fa-angle-right"></button>
+                        </li>
+                        <li class="has-drop">
+                            <a class="has-text-color-hover" href="admin_slider.php">Manage Slider</a>
+                            <button class="btn-caret fa fa-angle-right"></button>
+                        </li>
+                        <li class="has-drop">
+                            <a class="has-text-color-hover" href="admin_users.php">Manage Users</a>
+                            <button class="btn-caret fa fa-angle-right"></button>
+                        </li>
+                        <li class="has-drop">
+                            <a class="has-text-color-hover" href="admin_products.php">Manage Product</a>
+                            <button class="btn-caret fa fa-angle-right"></button>
+                        </li>
+                        <li>
+                            <a class="has-text-color-hover" href="admin_contact.php">Contact Check</a>
+                        </li>
+                        <li class="has-drop">
+                            <a class="has-text-color-hover" href="admin_change_password.php">Change Password</a>
+                        </li>
+                        <li>
+                            <a class="has-text-color-hover" href="admin_logout.php">Logout</a>
+                        </li>
+                    </ul>
+                    <div class="mini-shopcart">
+                        <div class="head-mini-shopcart">
+                            <p>2 items in your cart</p>
+                        </div>
+                        <div class="content-mini-shopcart">
+                            <div class="item-mini-shopcart">
+                                <div class="item-image">
+                                    <img src="images/shopping-cart-item-01.jpg" alt="shopping cart" />
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="name">Strawberries, 16 oz</h3>
+                                    <p class="price">1 x $2.50</p>
+                                    <button class="btn-del fa fa-close"></button>
+                                </div>
+                            </div>
+                            <div class="item-mini-shopcart">
+                                <div class="item-image">
+                                    <img src="images/shopping-cart-item-02.jpg" alt="shopping cart" />
+                                </div>
+                                <div class="item-content">
+                                    <h3 class="name">Broccoli, bunch</h3>
+                                    <p class="price">2 x $4.00</p>
+                                    <button class="btn-del fa fa-close"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foot-mini-shopcart">
+                            <p class="total-shopcart">Total: $6.50</p>
+                            <div class="mini-shopcart-action">
+                                <button class="au-btn au-btn-border au-btn-radius btn-viewcart">VIEW CART</button>
+                                <button class="au-btn au-btn-primary au-btn-radius btn-checkout">CHECK OUT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript Files -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/retinajs/dist/retina.min.js"></script>
+    <script src="vendor/SmoothScroll/SmoothScroll.js"></script>
+    <script src="js/switcher-custom.js"></script>
+    <script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <script>
+        // Add class when the user scrolls down
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbar = document.getElementById('js-navbar');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) { // Trigger class change after 50px scroll
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
