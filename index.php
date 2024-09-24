@@ -9,7 +9,7 @@ if (isset($_SESSION['username'])) {
     exit();
 }
 
-
+ 
 // Fetch all active sliders
 $sql = "SELECT * FROM slider WHERE status='active'";
 $result = $conn->query($sql);
@@ -307,7 +307,7 @@ $result = $conn->query($sql);
             <div class="container">
 
                 <div class="heading-section-1">
-                    <h3>WELCOME TO OUR FARM</h3>
+                    <h3>WELCOME TO OUR FARM </h3>
                 </div>
                 <div class="m-t-50">
 
